@@ -284,6 +284,7 @@ body {
   font-size: 1.7rem;
   color: #fff;
   background-color: var(--primary);
+  border-radius: 5px;
   cursor: pointer;
 }
 
