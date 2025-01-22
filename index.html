@@ -141,8 +141,7 @@
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus,
-        veritatis!
+        Jika ada masalah pada pelayanan kami, Silahkan isi email dan no-hp tersebut, akan kami hubungi secepatnya!!!
       </p>
 
       <div class="row">
@@ -154,18 +153,18 @@
           class="map"
         ></iframe>
 
-        <form action="">
+        <form method="POST" action="./php/contact.php">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="name" />
+            <input type="text" placeholder="name" name="nama" required />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+            <input type="text" placeholder="email" name="email" required />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
+            <input type="text" placeholder="no hp" name="no_hp" required />
           </div>
           <button type="submit" class="btn">Kirim Pesan</button>
         </form>
