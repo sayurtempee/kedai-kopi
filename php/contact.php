@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO contact (nama, email, no_hp) VALUES ('$nama', '$email', '$no_hp')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "<script>alert('Data Anda Berhasil Terkirim!!'); window.location.href = 'index.html';</script>";
+        echo "<script>alert('Data Anda Berhasil Terkirim!!'); window.location.href = '../index.php';</script>";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
